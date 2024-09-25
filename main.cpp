@@ -10,6 +10,9 @@ end of prgram message.
 
 #include <iostream> //  for cin/cout
 #include <string>   //  needed for string data types
+#include <cstdlib>
+#include <ctime>
+#include <studio.h>
 
 using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
@@ -18,6 +21,16 @@ int main() {
   int rightNum = 1;
   int userAns = 0;
   string userName = "unknown"; // this will store the user's name entered
+  char math_symbol = "+";
+  int correct_answer = 3;
+  int temp = 2;
+  int math_type = 1;
+  
+
+srand(leftNum);
+srand(rightNum);
+
+  
 
   // display the program header
   cout << "***********************************************************" << endl;
@@ -56,7 +69,12 @@ int main() {
   cin >> userName;
   // After the user types their name, the program will display a welcome message
   cout << "Welcome " << userName << " to the silly simple math tutor!" << endl;
-  cout << endl;
+
+  leftNum = rand()%(10) + 1;
+  rightNum = rand()%(10) + 1;
+  math_type = rand()%(4) + 1;
+
+switch(math_type)
   cout << "What is " << leftNum << " + " << rightNum << " = ";
   // This will put the users answer into the userAns variable
   cin >> userAns;
