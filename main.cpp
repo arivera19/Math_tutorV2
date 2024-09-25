@@ -12,6 +12,7 @@ end of prgram message.
 #include <string>   //  needed for string data types
 #include <cstdlib>
 #include <ctime>
+#include <cctype>
 
 using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
@@ -25,6 +26,7 @@ int main() {
   int temp = 2;
   int math_type = 1;
   
+  srand(time(0));
 
 srand(leftNum);
 srand(rightNum);
@@ -73,7 +75,7 @@ srand(rightNum);
   rightNum = rand()%(10) + 1;
   math_type = rand()%(4) + 1;
  
- cout << "Enter the math type between (1-4)" << endl;
+ cout << "Enter the math type between (1-4) to select a math type (1-Addition 2-Subtraction 3-Multiplication 4-Division)" << endl;
  cin >> math_type;
 switch(math_type){
      case 1:
@@ -103,14 +105,20 @@ switch(math_type){
      cout << "Display error not in range of math_type" << endl;
      break;
 }
-  cout << "What is " << leftNum << " + " << rightNum << " = ";
+
+  cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
   // This will put the users answer into the userAns variable
   cin >> userAns;
   cout << endl;
+if (userAns == correct_answer && userAns == isdigit(userAns) == true){
+     cout << "Congratulations on getting the answer correct" << endl;
+} 
+ else{
+     cout << "The correct answer is " << correct_answer << endl;
+     cout << "Try again next time 😄" << endl;
+}
 
-  cout << "Sorry, this is all the program does at the moment." << endl;
 
-  cout << "Version 2 is coming soon." << endl;
 
   cout << "End of program." << endl;
 
