@@ -12,7 +12,6 @@ end of prgram message.
 #include <string>   //  needed for string data types
 #include <cstdlib>
 #include <ctime>
-#include <studio.h>
 
 using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
@@ -21,7 +20,7 @@ int main() {
   int rightNum = 1;
   int userAns = 0;
   string userName = "unknown"; // this will store the user's name entered
-  char math_symbol = "+";
+  char math_symbol = '+';
   int correct_answer = 3;
   int temp = 2;
   int math_type = 1;
@@ -73,8 +72,37 @@ srand(rightNum);
   leftNum = rand()%(10) + 1;
   rightNum = rand()%(10) + 1;
   math_type = rand()%(4) + 1;
+ 
+ cout << "Enter the math type between (1-4)" << endl;
+ cin >> math_type;
+switch(math_type){
+     case 1:
+     math_symbol = '+';
+     correct_answer = leftNum + rightNum;
+     break;
 
-switch(math_type)
+     case 2:
+     math_symbol = '-';
+     if (leftNum < rightNum){
+          temp = leftNum;
+          leftNum = rightNum;
+          rightNum = temp;
+     };
+     correct_answer = leftNum - rightNum;
+     break;
+     case 3:
+     math_symbol = '*';
+     correct_answer = leftNum * rightNum;
+     break;
+     case 4:
+     math_symbol = '/';
+     correct_answer = leftNum;
+     leftNum *= rightNum;
+     correct_answer= leftNum / rightNum;
+     default:
+     cout << "Display error not in range of math_type" << endl;
+     break;
+}
   cout << "What is " << leftNum << " + " << rightNum << " = ";
   // This will put the users answer into the userAns variable
   cin >> userAns;
