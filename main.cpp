@@ -26,11 +26,8 @@ int main() {
   int temp = 2;
   int math_type = 1;
   
-  srand(time(0));
-
-srand(leftNum);
-srand(rightNum);
-
+srand(time(0));
+ 
   
 
   // display the program header
