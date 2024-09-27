@@ -69,9 +69,9 @@ srand(time(0));
   // After the user types their name, the program will display a welcome message
   cout << "Welcome " << userName << " to the silly simple math tutor!" << endl;
 
-  leftNum = rand()%(10) + 1;
-  rightNum = rand()%(10) + 1;
-  math_type = rand()%(4) + 1;
+  leftNum = rand()%(10) + 1; //Assign random numbers to the variable left num between 1 and 10
+  rightNum = rand()%(10) + 1; //Assign random numbers to the variable right num between 1 and 10
+
  
  cout << "Enter the math type between (1-4) to select a math type (1-Addition 2-Subtraction 3-Multiplication 4-Division)" << endl;
  cin >> math_type;
