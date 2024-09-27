@@ -18,11 +18,11 @@ using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
 
 int main() {
-  int leftNum = 2;
-  int rightNum = 1;
-  int userAns = 0;
+  int leftNum = 2; // create and initialize the leftNum variable to 2
+  int rightNum = 1; // create and initialize the rightNum variable to 1
+  int userAns = 0; // create and initialize the userAns variable to 0
   string userName = "unknown"; // this will store the user's name entered
-  char math_symbol = '+';
+  char math_symbol = '+'; // create and initialize the math_symbolchar to 1
   int correct_answer = 3;
   int temp = 2;
   int math_type = 1;
@@ -72,12 +72,12 @@ srand(time(0));
   leftNum = rand()%(10) + 1; //Assign random numbers to the variable left num between 1 and 10
   rightNum = rand()%(10) + 1; //Assign random numbers to the variable right num between 1 and 10
 
- 
+ // Getting user math type
  cout << "Enter the math type between (1-4) to select a math type (1-Addition 2-Subtraction 3-Multiplication 4-Division)" << endl;
  cin >> math_type;
 switch(math_type){
-     case 1:
-     math_symbol = '+';
+     case 1: //If math type = 1
+     math_symbol = '+'; // Math symbol will be assigned to +
      correct_answer = leftNum + rightNum;
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
      // This will put the users answer into the userAns variable

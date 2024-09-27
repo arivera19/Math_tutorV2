@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/alrive04/OneDrive - Wayne State College/Math_tutorV2
+# Install script for directory: C:/Users/coaffa01/CLionProjects/Math_tutorV2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/alrive04/OneDrive - Wayne State College/Math_tutorV2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/coaffa01/CLionProjects/Math_tutorV2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
