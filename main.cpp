@@ -72,12 +72,12 @@ srand(time(0));
   leftNum = rand()%(10) + 1; //Assign random numbers to the variable left num between 1 and 10
   rightNum = rand()%(10) + 1; //Assign random numbers to the variable right num between 1 and 10
 
- 
+ // Getting user math type
  cout << "Enter the math type between (1-4) to select a math type (1-Addition 2-Subtraction 3-Multiplication 4-Division)" << endl;
  cin >> math_type;
 switch(math_type){
-     case 1:
-     math_symbol = '+';
+     case 1: //If math type = 1
+     math_symbol = '+'; // Math symbol will be assigned to +
      correct_answer = leftNum + rightNum;
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
      // This will put the users answer into the userAns variable
