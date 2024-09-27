@@ -16,6 +16,7 @@ end of prgram message.
 
 using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
+
 int main() {
   int leftNum = 2;
   int rightNum = 1;
@@ -78,6 +79,21 @@ switch(math_type){
      case 1:
      math_symbol = '+';
      correct_answer = leftNum + rightNum;
+     cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
+     // This will put the users answer into the userAns variable
+     cin >> userAns;
+     cout << endl;
+     if (userAns == correct_answer){
+          cout << "Congratulations on getting the answer correct" << endl;
+     }
+     else{
+          cout << "The correct answer is " << correct_answer << endl;
+          cout << "Try again next time" << endl;
+     }
+
+
+
+     cout << "End of program." << endl;
      break;
 
      case 2:
@@ -88,36 +104,64 @@ switch(math_type){
           rightNum = temp;
      };
      correct_answer = leftNum - rightNum;
+     cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
+     // This will put the users answer into the userAns variable
+     cin >> userAns;
+     cout << endl;
+     if (userAns == correct_answer){
+          cout << "Congratulations on getting the answer correct" << endl;
+     }
+     else{
+          cout << "The correct answer is " << correct_answer << endl;
+          cout << "Try again next time" << endl;
+     }
+
+
+
+     cout << "End of program." << endl;
      break;
      case 3:
      math_symbol = '*';
      correct_answer = leftNum * rightNum;
+     cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
+     // This will put the users answer into the userAns variable
+     cin >> userAns;
+     cout << endl;
+     if (userAns == correct_answer){
+          cout << "Congratulations on getting the answer correct" << endl;
+     }
+     else{
+          cout << "The correct answer is " << correct_answer << endl;
+          cout << "Try again next time" << endl;
+     }
+
+
+
+     cout << "End of program." << endl;
      break;
      case 4:
      math_symbol = '/';
      correct_answer = leftNum;
      leftNum *= rightNum;
      correct_answer= leftNum / rightNum;
+     cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
+     // This will put the users answer into the userAns variable
+     cin >> userAns;
+     cout << endl;
+     if (userAns == correct_answer){
+          cout << "Congratulations on getting the answer correct" << endl;
+     }
+     else{
+          cout << "The correct answer is " << correct_answer << endl;
+          cout << "Try again next time" << endl;
+     }
+
+     cout << "End of program." << endl;
      default:
      cout << "Display error not in range of math_type" << endl;
+
      break;
 }
-
-  cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
-  // This will put the users answer into the userAns variable
-  cin >> userAns;
-  cout << endl;
-if (userAns == correct_answer && userAns == isdigit(userAns) == true){
-     cout << "Congratulations on getting the answer correct" << endl;
-} 
- else{
-     cout << "The correct answer is " << correct_answer << endl;
-     cout << "Try again next time 😄" << endl;
-}
-
-
-
-  cout << "End of program." << endl;
 
   return 0; // end the program successfully with the return 0
 }
