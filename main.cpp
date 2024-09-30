@@ -162,6 +162,7 @@ switch(math_type){
      cout << "End of program." << endl;
      default:
      cout << "Display error not in range of math_type" << endl;
+     cout << "please re-run the program" << endl;
 
      break;
 }
