@@ -19,15 +19,15 @@ using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
 
 int main() {
-  int leftNum = 2; // create and initialize the leftNum variable to 2
-  int rightNum = 1; // create and initialize the rightNum variable to 1
-  int userAns = 0; // create and initialize the userAns variable to 0
+  int leftNum = 2;//
+  int rightNum = 1;
+  int userAns = 0;
   string userName = "unknown"; // this will store the user's name entered
-  char math_symbol = '+'; // create and initialize the math_symbolchar to 1
+  char math_symbol = '+';
   int correct_answer = 3;
   int temp = 2;
   int math_type = 1;
-  
+     //used the srand fuction to seed time since the development of C++ so that the random numbers generated are not the same
 srand(time(0));
 
   // display the program header
@@ -95,19 +95,18 @@ switch(math_type){
      cout << "End of program." << endl;
      break;
 
-     case 2: //If math type = 1
-     math_symbol = '-'; // Math symbol will be assigned to -
-     if (leftNum < rightNum){ //   We don't want a negative number so we would like to swap the position of the numbers
+     case 2:
+     math_symbol = '-';
+     if (leftNum < rightNum){
           temp = leftNum;
           leftNum = rightNum;
           rightNum = temp;
      };
-     correct_answer = leftNum - rightNum; // assign correct_answer in this switch statement
+     correct_answer = leftNum - rightNum;
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
      // This will put the users answer into the userAns variable
      cin >> userAns;
      cout << endl;
-     // conditional statement for checking if the answer is correct or not
      if (userAns == correct_answer){
           cout << "Congratulations on getting the answer correct" << endl;
      }
@@ -119,8 +118,7 @@ switch(math_type){
 
 
      cout << "End of program." << endl;
-     break;// terminates the case for the switch
-
+     break;
      case 3:
      math_symbol = '*';
      correct_answer = leftNum * rightNum;
@@ -160,7 +158,6 @@ switch(math_type){
      cout << "End of program." << endl;
      default:
      cout << "Display error not in range of math_type" << endl;
-     cout << "please re-run the program" << endl;
 
      break;
 }
