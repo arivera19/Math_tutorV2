@@ -97,18 +97,19 @@ switch(math_type){
      cout << "End of program." << endl;
      break;
 
-     case 2:
-     math_symbol = '-';
-     if (leftNum < rightNum){
+     case 2: //If math type = 1
+     math_symbol = '-'; // Math symbol will be assigned to -
+     if (leftNum < rightNum){ //   We don't want a negative number so we would like to swap the position of the numbers
           temp = leftNum;
           leftNum = rightNum;
           rightNum = temp;
      };
-     correct_answer = leftNum - rightNum;
+     correct_answer = leftNum - rightNum; // assign correct_answer in this switch statement
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
      // This will put the users answer into the userAns variable
      cin >> userAns;
      cout << endl;
+     // conditional statement for checking if the answer is correct or not
      if (userAns == correct_answer){
           cout << "Congratulations on getting the answer correct" << endl;
      }
@@ -120,7 +121,8 @@ switch(math_type){
 
 
      cout << "End of program." << endl;
-     break;
+     break;// terminates the case for the switch
+
      case 3:
      math_symbol = '*';
      correct_answer = leftNum * rightNum;
