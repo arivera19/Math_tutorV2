@@ -1,5 +1,5 @@
 CMakeFiles/Math_tutorV2.dir/main.cpp.obj: \
- C:\Users\alrive04\OneDrive\ -\ Wayne\ State\ College\Math_tutorV2\main.cpp \
+ C:\Users\coaffa01\CLionProjects\Math_tutorV2\main.cpp \
  C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files\ (x86)/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

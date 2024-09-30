@@ -29,8 +29,6 @@ int main() {
   int math_type = 1;
   
 srand(time(0));
- 
-  
 
   // display the program header
   cout << "***********************************************************" << endl;
