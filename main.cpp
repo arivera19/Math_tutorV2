@@ -27,9 +27,8 @@ int main() {
   int correct_answer = 3;
   int temp = 2;
   int math_type = 1;
-     // Uses the srand function to seed time from the time of development of C++ so random number generated are not the same
+  
 srand(time(0));
-
  
   
 
@@ -77,7 +76,7 @@ srand(time(0));
  // Getting user math type
  cout << "Enter the math type between (1-4) to select a math type (1-Addition 2-Subtraction 3-Multiplication 4-Division)" << endl;
  cin >> math_type;
-switch(math_type){ //It creates a switch for the math_type variable
+switch(math_type){
      case 1: //If math type = 1
      math_symbol = '+'; // Math symbol will be assigned to +
      correct_answer = leftNum + rightNum;
@@ -85,10 +84,10 @@ switch(math_type){ //It creates a switch for the math_type variable
      // This will put the users answer into the userAns variable
      cin >> userAns;
      cout << endl;
-     if (userAns == correct_answer){ // If the answer is correct it will display a Congrats
+     if (userAns == correct_answer){
           cout << "Congratulations on getting the answer correct" << endl;
      }
-     else{  //Else the answer is wrong it will display the correct answer with positive encouragement
+     else{
           cout << "The correct answer is " << correct_answer << endl;
           cout << "Try again next time" << endl;
      }
@@ -96,10 +95,10 @@ switch(math_type){ //It creates a switch for the math_type variable
 
 
      cout << "End of program." << endl;
-     break; // It breaks the switch statement
+     break;
 
-     case 2: // If math_type = 2
-     math_symbol = '-'; // Math symbol will be assigned to -
+     case 2:
+     math_symbol = '-';
      if (leftNum < rightNum){
           temp = leftNum;
           leftNum = rightNum;
@@ -107,6 +106,7 @@ switch(math_type){ //It creates a switch for the math_type variable
      };
      correct_answer = leftNum - rightNum;
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
+     // This will put the users answer into the userAns variable
      cin >> userAns;
      cout << endl;
      if (userAns == correct_answer){
@@ -121,10 +121,11 @@ switch(math_type){ //It creates a switch for the math_type variable
 
      cout << "End of program." << endl;
      break;
-     case 3: // If the user entered a 3
-     math_symbol = '*'; // The math symbol will become a *
+     case 3:
+     math_symbol = '*';
      correct_answer = leftNum * rightNum;
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
+     // This will put the users answer into the userAns variable
      cin >> userAns;
      cout << endl;
      if (userAns == correct_answer){
@@ -139,12 +140,13 @@ switch(math_type){ //It creates a switch for the math_type variable
 
      cout << "End of program." << endl;
      break;
-     case 4: // If the user entered 4
-     math_symbol = '/'; // The math symbol will become /
+     case 4:
+     math_symbol = '/';
      correct_answer = leftNum;
      leftNum *= rightNum;
      correct_answer= leftNum / rightNum;
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
+     // This will put the users answer into the userAns variable
      cin >> userAns;
      cout << endl;
      if (userAns == correct_answer){
@@ -164,3 +166,5 @@ switch(math_type){ //It creates a switch for the math_type variable
 
   return 0; // end the program successfully with the return 0
 }
+// I did use AI to help figure out how to get the program to display the users
+// name and Answer for the math problem not be 0.
