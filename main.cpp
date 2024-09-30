@@ -19,7 +19,7 @@ using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
 
 int main() {
-  int leftNum = 2;
+  int leftNum = 2;//
   int rightNum = 1;
   int userAns = 0;
   string userName = "unknown"; // this will store the user's name entered
