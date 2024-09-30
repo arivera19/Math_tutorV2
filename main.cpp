@@ -1,11 +1,12 @@
 /****************************************************************************
-Program:     MathTutorV1
-Programmer:  Alejandro Rivera
-Date:        8/28/2024
-replit URL:  https://replit.com/@arivera24/SimpleMathTutor#main.cpp
-Description: An easy math tuto for young children. In version 1, it displays the
-program intro, gets the users name, asks simple question, and then displays an
-end of prgram message.
+Program:     MathTutorV2
+Programmers:  Alejandro Rivera, Confidence Affang
+Date:        8/30/2024
+Description: An easy math tutor for young children. In version 2, it displays the
+program intro, gets the users name, asks to select a variable (+,-,*,/), then ask a math problem
+to the user,if the user entered the correct answer it will display "correct" and the
+end of program message,else the answer is wrong it will display the correct answer and display the
+end of program message.
 ***************************************************************************/
 
 #include <iostream> //  for cin/cout
