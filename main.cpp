@@ -27,7 +27,7 @@ int main() {
   int correct_answer = 3;
   int temp = 2;
   int math_type = 1;
-  
+     //used the srand fuction to seed time since the development of C++ so that the random numbers generated are not the same
 srand(time(0));
  
   
