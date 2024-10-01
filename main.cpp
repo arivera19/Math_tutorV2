@@ -19,12 +19,12 @@ using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
 
 int main() {
-  int leftNum = 2;//
+  int leftNum = 2;
   int rightNum = 1;
-  int userAns = 0;
+  int userAns = 0; // the answer the user entered
   string userName = "unknown"; // this will store the user's name entered
   char math_symbol = '+';
-  int correct_answer = 3;
+  int correct_answer = 3; // the correct answer for the math problem
   int temp = 2;
   int math_type = 1;
      //used the srand fuction to seed time since the development of C++ so that the random numbers generated are not the same
