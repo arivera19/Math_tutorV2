@@ -82,10 +82,10 @@ switch(math_type){
      // This will put the users answer into the userAns variable
      cin >> userAns;
      cout << endl;
-     if (userAns == correct_answer){
+     if (userAns == correct_answer){ // If the user enters the correct answer it will display a congrats
           cout << "Congratulations on getting the answer correct" << endl;
      }
-     else{
+     else{ // If the user enters the wrong answer it will display the correct answer and positive reinforcement
           cout << "The correct answer is " << correct_answer << endl;
           cout << "Try again next time" << endl;
      }
@@ -93,10 +93,10 @@ switch(math_type){
 
 
      cout << "End of program." << endl;
-     break;
+     break; // This ends the switch statement a
 
-     case 2:
-     math_symbol = '-';
+     case 2: //If math type = 2
+     math_symbol = '-'; // Math symbol will be assigned to -
      if (leftNum < rightNum){
           temp = leftNum;
           leftNum = rightNum;
@@ -119,8 +119,8 @@ switch(math_type){
 
      cout << "End of program." << endl;
      break;
-     case 3:
-     math_symbol = '*';
+     case 3: //If math type = 3
+     math_symbol = '*'; // Math symbol will be assigned to *
      correct_answer = leftNum * rightNum;
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
      // This will put the users answer into the userAns variable
@@ -138,8 +138,8 @@ switch(math_type){
 
      cout << "End of program." << endl;
      break;
-     case 4:
-     math_symbol = '/';
+     case 4: //If math type = 4
+     math_symbol = '/'; // Math symbol will be assigned to /
      correct_answer = leftNum;
      leftNum *= rightNum;
      correct_answer= leftNum / rightNum;
@@ -157,6 +157,7 @@ switch(math_type){
 
      cout << "End of program." << endl;
      default:
+          //This displays when the variable number entered is not within the range
      cout << "Display error not in range of math_type" << endl;
 
      break;
@@ -164,5 +165,4 @@ switch(math_type){
 
   return 0; // end the program successfully with the return 0
 }
-// I did use AI to help figure out how to get the program to display the users
-// name and Answer for the math problem not be 0.
+

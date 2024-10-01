@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.29"
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Math_tutorV2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Math_tutorV2-Debug-6501803d0609d1c05d97.json",
+					"jsonFile" : "target-Math_tutorV2-Debug-6a7242f5e2c4216ef9ae.json",
 					"name" : "Math_tutorV2",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/coaffa01/CLionProjects/Math_tutorV2/cmake-build-debug",
-		"source" : "C:/Users/coaffa01/CLionProjects/Math_tutorV2"
+		"build" : "/Users/alexrivera24/Library/CloudStorage/OneDrive-WayneStateCollege/Math_tutorV2/cmake-build-debug",
+		"source" : "/Users/alexrivera24/Library/CloudStorage/OneDrive-WayneStateCollege/Math_tutorV2"
 	},
 	"version" : 
 	{
