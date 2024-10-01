@@ -7,6 +7,7 @@ program intro, gets the users name, asks to select a variable (+,-,*,/), then as
 to the user,if the user entered the correct answer it will display "correct" and the
 end of program message,else the answer is wrong it will display the correct answer and display the
 end of program message.
+Github URL: https://github.com/arivera19/Math_tutorV2
 ***************************************************************************/
 
 #include <iostream> //  for cin/cout
