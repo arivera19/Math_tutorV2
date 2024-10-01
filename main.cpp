@@ -94,7 +94,7 @@ switch(math_type){
 
 
      cout << "End of program." << endl;
-     break; // This ends the switch statement a
+     break; // This ends the switch case
 
      case 2: //If math type = 2
      math_symbol = '-'; // Math symbol will be assigned to -
@@ -109,6 +109,7 @@ switch(math_type){
      // This will put the users answer into the userAns variable
      cin >> userAns;
      cout << endl;
+     //condtional statements to check if the user got the answer correct or not
      if (userAns == correct_answer){
           cout << "Congratulations on getting the answer correct" << endl;
      }
@@ -120,7 +121,7 @@ switch(math_type){
 
 
      cout << "End of program." << endl;
-     break;
+     break;// terminate the switch case
      case 3: //If math type = 3
      math_symbol = '*'; // Math symbol will be assigned to *
      correct_answer = leftNum * rightNum;// sets correct answer based on the switch case
@@ -128,6 +129,7 @@ switch(math_type){
      // This will put the users answer into the userAns variable
      cin >> userAns;// take user's input
      cout << endl;
+     //condtional statements to check if the user got the answer correct or not
      if (userAns == correct_answer){
           cout << "Congratulations on getting the answer correct" << endl;
      }
@@ -139,7 +141,7 @@ switch(math_type){
 
 
      cout << "End of program." << endl;
-     break;
+     break;// terminate the switch case
      case 4: //If math type = 4
      math_symbol = '/'; // Math symbol will be assigned to /
      correct_answer = leftNum;// sets correct answer based on the switch case
@@ -149,6 +151,7 @@ switch(math_type){
      // This will put the users answer into the userAns variable
      cin >> userAns; // take user's input
      cout << endl;
+     //condtional statements to check if the user got the answer correct or not
      if (userAns == correct_answer){
           cout << "Congratulations on getting the answer correct" << endl;
      }
@@ -158,11 +161,13 @@ switch(math_type){
      }
 
      cout << "End of program." << endl;
+     break;// terminate the switch case
      default:
           //This displays when the variable number entered is not within the range
      cout << "Display error not in range of math_type" << endl;
+     cout << "Please re-run the program" << endl;
 
-     break;
+     break;// terminate the switch case
 }
 
   return 0; // end the program successfully with the return 0
