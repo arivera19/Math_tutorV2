@@ -11,15 +11,16 @@ end of program message.
 
 #include <iostream> //  for cin/cout
 #include <string>   //  needed for string data types
-#include <cstdlib>
-#include <ctime>
+#include <cstdlib>// for generating random numbers
+#include <ctime> //include the time library
 #include <cctype>
 
 using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
 
 int main() {
-  int leftNum = 2;//
+     // declare and intialize the variables
+  int leftNum = 2;
   int rightNum = 1;
   int userAns = 0;
   string userName = "unknown"; // this will store the user's name entered
