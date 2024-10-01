@@ -97,12 +97,13 @@ switch(math_type){
 
      case 2: //If math type = 2
      math_symbol = '-'; // Math symbol will be assigned to -
+     // we would swap the numbers if the leftNum is less than the rightNum because we don't want a negative number
      if (leftNum < rightNum){
           temp = leftNum;
           leftNum = rightNum;
           rightNum = temp;
      };
-     correct_answer = leftNum - rightNum;
+     correct_answer = leftNum - rightNum;// sets correct answer based on the switch case
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
      // This will put the users answer into the userAns variable
      cin >> userAns;
@@ -121,10 +122,10 @@ switch(math_type){
      break;
      case 3: //If math type = 3
      math_symbol = '*'; // Math symbol will be assigned to *
-     correct_answer = leftNum * rightNum;
+     correct_answer = leftNum * rightNum;// sets correct answer based on the switch case
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
      // This will put the users answer into the userAns variable
-     cin >> userAns;
+     cin >> userAns;// take user's input
      cout << endl;
      if (userAns == correct_answer){
           cout << "Congratulations on getting the answer correct" << endl;
@@ -140,12 +141,12 @@ switch(math_type){
      break;
      case 4: //If math type = 4
      math_symbol = '/'; // Math symbol will be assigned to /
-     correct_answer = leftNum;
-     leftNum *= rightNum;
+     correct_answer = leftNum;// sets correct answer based on the switch case
+     leftNum *= rightNum; // we make leftNum a multiple of rightNum so that we don't get a fraction
      correct_answer= leftNum / rightNum;
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
      // This will put the users answer into the userAns variable
-     cin >> userAns;
+     cin >> userAns; // take user's input
      cout << endl;
      if (userAns == correct_answer){
           cout << "Congratulations on getting the answer correct" << endl;
