@@ -13,7 +13,7 @@ end of program message.
 #include <string>   //  needed for string data types
 #include <cstdlib>// for generating random numbers
 #include <ctime> //include the time library
-#include <cctype>
+
 
 using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
