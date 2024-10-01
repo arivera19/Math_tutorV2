@@ -77,7 +77,7 @@ srand(time(0));
 switch(math_type){
      case 1: //If math type = 1
      math_symbol = '+'; // Math symbol will be assigned to +
-     correct_answer = leftNum + rightNum;
+     correct_answer = leftNum + rightNum; // sets correct answer based on the switch case
      cout << "What is " << leftNum << " " <<  math_symbol << " " << rightNum << " = ";
      // This will put the users answer into the userAns variable
      cin >> userAns;
