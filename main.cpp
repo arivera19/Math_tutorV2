@@ -29,7 +29,7 @@ int main() {
   int temp = 2;
   int math_type = 1;
      //used the srand fuction to seed time since the development of C++ so that the random numbers generated are not the same
-  srand(time(0));
+     srand(time(0));
 
   // display the program header
   cout << "***********************************************************" << endl;
@@ -69,12 +69,11 @@ int main() {
   // After the user types their name, the program will display a welcome message
   cout << "Welcome " << userName << " to the silly simple math tutor!" << endl;
 
-  leftNum = rand()%(10) + 1; //Assign random numbers to the variable left num between 1 and 10
-  rightNum = rand()%(10) + 1; //Assign random numbers to the variable right num between 1 and 10
+  leftNum = rand()%(10) + 1; //Assign random numbers to the variable left num between 1 and 10 inclusive
+  rightNum = rand()%(10) + 1; //Assign random numbers to the variable right num between 1 and 10 inclusive
+  math_type = rand()%(4) + 1;//Assign random numbers to the variable math type between 1 and 4 inclusive
 
- // Getting user math type
- cout << "Enter the math type between (1-4) to select a math type (1-Addition 2-Subtraction 3-Multiplication 4-Division)" << endl;
- cin >> math_type;
+
 switch(math_type){
      case 1: //If math type = 1
      math_symbol = '+'; // Math symbol will be assigned to +
@@ -166,10 +165,9 @@ switch(math_type){
           //This displays when the variable number entered is not within the range
      cout << "Display error not in range of math_type" << endl;
      cout << "Please re-run the program" << endl;
-
+     cout << "Contact us to know more about the situation"<< endl;
      break;// terminate the switch case
 }
 
   return 0; // end the program successfully with the return 0
 }
-
