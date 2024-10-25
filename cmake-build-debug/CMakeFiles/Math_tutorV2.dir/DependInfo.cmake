@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/coaffa01/CLionProjects/Math_tutorV2/main.cpp" "CMakeFiles/Math_tutorV2.dir/main.cpp.obj" "gcc" "CMakeFiles/Math_tutorV2.dir/main.cpp.obj.d"
+  "C:/Users/eatua/CLionProjects/Math_tutorV2/main.cpp" "CMakeFiles/Math_tutorV2.dir/main.cpp.obj" "gcc" "CMakeFiles/Math_tutorV2.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
