@@ -75,6 +75,8 @@ int main() {
     math_type = rand() % (4) + 1; //Assign random numbers to the variable math type between 1 and 4 inclusive
 
 
+    math_type = 5;
+
     switch (math_type) {
         case 1: //If math type = 1
             math_symbol = '+'; // Math symbol will be assigned to +
@@ -113,19 +115,20 @@ int main() {
             break; // terminate the switch case
     }
 
-    cout << "What is " << leftNum << " " << math_symbol << " " << rightNum << " = ";
-    // This will put the users answer into the userAns variable
-    cin >> userAns;
-    cout << endl;
-    if (userAns == correct_answer) {
-        // If the user enters the correct answer it will display a congrats
-        cout << "Congratulations on getting the answer correct" << endl;
-    } else {
-        // If the user enters the wrong answer it will display the correct answer and positive reinforcement
-        cout << "The correct answer is " << correct_answer << endl;
-        cout << "Try again next time" << endl;
+    if(math_type >=1 && math_type < 5) {
+        cout << "What is " << leftNum << " " << math_symbol << " " << rightNum << " = ";
+        // This will put the users answer into the userAns variable
+        cin >> userAns;
+        cout << endl;
+        if (userAns == correct_answer) {
+            // If the user enters the correct answer it will display a congrats
+            cout << "Congratulations on getting the answer correct" << endl;
+        } else {
+            // If the user enters the wrong answer it will display the correct answer and positive reinforcement
+            cout << "The correct answer is " << correct_answer << endl;
+            cout << "Try again next time" << endl;
+        }
+        cout << "End of program." << endl;
     }
-    cout << "End of program." << endl;
-
     return 0; // end the program successfully with the return 0
 }
