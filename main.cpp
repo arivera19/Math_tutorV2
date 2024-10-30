@@ -74,7 +74,7 @@ int main() {
     rightNum = rand() % (10) + 1; //Assign random numbers to the variable right num between 1 and 10 inclusive
     math_type = rand() % (4) + 1; //Assign random numbers to the variable math type between 1 and 4 inclusive
 
-    math_type = 5;
+
 
     switch (math_type) {
         case 1: //If math type = 1
