@@ -21,14 +21,14 @@ using namespace std; // so you dont have to type std:: in front of cin/cout/endl
 
 int main() {
     // declare and intialize the variables
-    int leftNum = 2;
-    int rightNum = 1;
+    int leftNum = 0;
+    int rightNum = 0;
     int userAns = 0;
     string userName = "unknown"; // this will store the user's name entered
     char math_symbol = '+';
-    int correct_answer = 3;
-    int temp = 2;
-    int math_type = 1;
+    int correct_answer = 0;
+    int temp = 0;
+    int math_type = 0;
     //used the srand fuction to seed time since the development of C++ so that the random numbers generated are not the same
     srand(time(0));
 
@@ -66,7 +66,7 @@ int main() {
 
     // Gets the user's name and welcomes the user
     cout << "What is your name? ";
-    cin >> userName;
+    getline(cin, userName);
     // After the user types their name, the program will display a welcome message
     cout << "Welcome " << userName << " to the silly simple math tutor!" << endl;
 
@@ -74,6 +74,7 @@ int main() {
     rightNum = rand() % (10) + 1; //Assign random numbers to the variable right num between 1 and 10 inclusive
     math_type = rand() % (4) + 1; //Assign random numbers to the variable math type between 1 and 4 inclusive
 
+    math_type = 5;
 
     switch (math_type) {
         case 1: //If math type = 1
@@ -107,17 +108,21 @@ int main() {
 
         default:
             //This displays when the variable number entered is not within the range
-            cout << "Display error not in range of math_type" << endl;
+            cout << "Display error not in range of math type" << endl;
             cout << "Please re-run the program" << endl;
-            cout << "Contact us to know more about the situation" << endl;
+            cout << "Contact Alejandro Rivera or Confidence Affang to know more about the situation" << endl;
+            cout << "The program ended with a -1 error" <<endl;
+            exit(-1);
             break; // terminate the switch case
+
+
     }
 
-    if (math_type >= 1 && math_type < 5) {
         cout << "What is " << leftNum << " " << math_symbol << " " << rightNum << " = ";
         // This will put the users answer into the userAns variable
         cin >> userAns;
         cout << endl;
+
         if (userAns == correct_answer) {
             // If the user enters the correct answer it will display a congrats
             cout << "Congratulations on getting the answer correct" << endl;
@@ -126,7 +131,8 @@ int main() {
             cout << "The correct answer is " << correct_answer << endl;
             cout << "Try again next time" << endl;
         }
+
         cout << "End of program." << endl;
-    }
+
     return 0; // end the program successfully with the return 0
 }
